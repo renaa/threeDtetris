@@ -17,8 +17,7 @@
 	
 	<div id="container">
 		<div id="start-container">
-			<div>
-				<p>hei, click & drag to change perspective</p>
+				<p>Click & drag to change perspective</p>
 				<p>&nbsp;&nbsp;&nbsp;&nbsp;...scrool to zoom</p>
 				<p>&nbsp;&nbsp;&nbsp;&nbsp;...right click to pan</p>
 				<p>🔼 Move blocks with arrows</p>
@@ -26,10 +25,50 @@
 				<p>👇 Drop one block down: F</p>
 				<p>😡 Get new piece: G</p>
 				<p>🎮 Toggle pause and this message: Space</p>
-			</div>
 		</div>
 	</div>
 
 	<script src='bundle.js'></script>
 </body>
 </html>
+
+<style>
+	body{
+		margin: 0;
+		overflow: hidden;
+	}
+  #container{
+		height: 100%;
+    position: relative;
+		overflow: hidden;
+  }
+  #start-container{
+    position: absolute;
+
+		bottom: 0;
+		width: 100%;
+    margin: auto;
+    color: white;
+    font-size: 2.5em;
+    font-family: 'Courier New', Courier, monospace;
+    margin: auto;
+    text-align: left;
+		background-color: rgba(250, 100, 255, 0.486);
+
+  }
+
+  p{
+    /* mix-blend-mode: overlay; */
+    color: black;
+  }
+  #button{
+    font-size: 2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+
+  }
+  p{
+    margin: 0 0 32px;
+  }
+
+</style>

@@ -1,35 +1,11 @@
-# rollup-starter-app
+## 3d tetris
 
-This repo contains a bare-bones example of how to create an application using Rollup, including importing a module from `node_modules` and converting it from CommonJS.
+- three.js
+- rollup
+- netlify
 
-*See also https://github.com/rollup/rollup-starter-lib*
+try it here:
 
+https://threedtetris.netlify.app/
 
-## Getting started
-
-Clone this repository and install its dependencies:
-
-```bash
-git clone https://github.com/rollup/rollup-starter-app
-cd rollup-starter-app
-npm install
-
-# or
-npx degit "rollup/rollup-starter-app" my-app
-cd my-app
-npm install
-```
-
-The `public/index.html` file contains a `<script src='bundle.js'>` tag, which means we need to create `public/bundle.js`. The `rollup.config.js` file tells Rollup how to create this bundle, starting with `src/main.js` and including all its dependencies, including [date-fns](https://date-fns.org).
-
-`npm run build` builds the application to `public/bundle.js`, along with a sourcemap file for debugging.
-
-`npm start` launches a server, using [serve](https://github.com/zeit/serve). Navigate to [localhost:3000](http://localhost:3000).
-
-`npm run watch` will continually rebuild the application as your source files change.
-
-`npm run dev` will run `npm start` and `npm run watch` in parallel.
-
-## License
-
-[MIT](LICENSE).
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e0cfe2ae-ed7d-4f08-9698-efe60d4f65e2/deploy-status)](https://app.netlify.com/sites/threedtetris/deploys)
